@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+/* mains */
+.container{
+    background-color: indianred;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+.container .IO .I{
+    background-color: black;
+    width: 8px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    border-radius: 90px;
+}
+.container .IO .I:hover{
+    background-color:rgb(253, 158, 255);
+}
+.container .IO .O:hover{
+    border: 8px solid rgb(253, 158, 255);
+}
+.container .IO .O{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    border-radius: 90px;
+    border: 8px solid black;
+}
+/* MENU */
+.all-menu{
+    display: flex;
+    flex-direction: column;
+}
+.MENU-a{
+    content: "";
+    background-color: black;
+    height: 7px;
+    width: 50px;
+    position: absolute;
+    line-height: 90px;
+    right: 90px;
+    top: 20px;
+}
+.MENU-a:hover{
+    background-color: rgb(253, 158, 255);
+}
+.MENU-b{
+    content: "";
+    background-color: black;
+    height: 7px;
+    width: 40px;
+    position: absolute;
+    line-height: 90px;
+    right: 90px;
+    top: 30px;
+    transition: 0.4s;
+}
+.MENU-b:hover{
+    width: 50px;
+    background-color: rgb(253, 158, 255);
+}
+.spans:hover .MENU-b{
+    width: 50px;
+}
+.MENU-c{
+    content: "";
+    background-color: black;
+    height: 7px;
+    width: 50px;
+    position: absolute;
+    line-height: 90px;
+    right: 90px;
+    top: 40px;
+}
+.MENU-c:hover{
+    background-color: rgb(253, 158, 255);
+}
+/* in the menu */
+ul{
+    background-color: blueviolet;
+    position: absolute;
+    padding: 0;
+    width: 115px;
+    height: 135px;
+    right: 120px;
+    top: 47px;
+    display: none;
+    box-shadow: -18px -7px 7px 0px #00000054;
+}
+ul:before{
+    content: "";
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid rgb(30, 0, 255);
+    top: -10px;
+    position: absolute;
+    right: 0;
+}
+.spans{
+    height: 7px;
+    width: 50px;
+    position: absolute;
+    right: 30px;
+    top: 9px;
+}
+.spans:hover li{
+    display: block; 
+    color: blueviolet;
+    padding: 8px;
+}
+.spans:hover ul{
+    display: block;
+    align-items: flex-start;
+    display: flex;
+    top: 56px;
+    flex-direction: column;
+    list-style: circle;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover{
+    padding-left: 20px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(253, 158, 255);
+    transition: 0.4s;
+}
+/* texts in background */
+.bg{
+    background-image: url(img/BG.jpeg);
+    height: calc(100vh - 100px);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.texts{
+    color: rgb(122, 14, 64);
+}
+.texts p{
+    color: rgb(122, 14, 64);
+    font-size: 19px;
+}
+/* texts in background */
+/* start section-2 rules */
+.section-2{
+    background-color: rgb(213, 213, 213);
+}
+.columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.col .icon{
+    font-size: 40px;
+    color: yellowgreen;
+    margin-bottom: 10px;
+}
+.col .text h2{
+    margin-bottom: 10px;
+    font-weight: 300px;
+}
+.col .text p{
+    line-height: 23px;
+    font-size: 20px;
+}
+/* end section-2 rules */
+/* start section-3 ( SERVICES ) rules */
+
+/* logo */
+.section-3{
+    position: relative;
+}
+.services-logo{
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-logo h2{
+    font-size: 100px;
+    color: rgb(213 213 213);
+}
+.services-logo p{
+    position: absolute;
+    top: 85px;
+}
+/* logo */
+/* sheets */
+.sheets{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 20px;
+    padding-bottom: 140px;
+}
+.sheet .up{
+    padding-bottom: 25px;
+    justify-content: space-between;
+    display: flex;
+}
+.sheet .down{
+    justify-content: space-between;
+    display: flex;
+}
+.icon{
+    font-size: 40px;
+    padding-right: 20px;
+}
+.sheet .up .icon {
+    padding: 0;
+}
+i{
+    color: palegoldenrod;
+}
+.sheet .text h2{
+    margin-bottom: 10px;
+}
+.sheet .text p{
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+/* sheet 3 image */
+.sheet{
+    margin-right: 76px;
+}
+.sheet .image img{
+    width: 230px;
+    position: absolute;
+    left: -230px;
+}
+.sheet .image{
+    position: relative;
+    margin-left: 200px;
+}
+.sheet .image::before{
+    content: "";
+    width: 100px;
+    height: 400px;
+    background-color: firebrick;
+    position: absolute;
+    right: -40px;
+    z-index: -1;
+    top: -30px;
+}
+/* sheets */
+/* end section-3 ( SERVICES ) rules */
+
+/* start section-4 rules  */
+.portfolio{
+    background-color: #00000054;
+    height: 800px;
+}
+.portfolio-logo{
+    padding: 0px 0px 50px 0px;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.portfolio-logo h2{
+    font-size: 100px;
+    position: absolute;
+    color: rgb(255, 239, 239);
+    top: -80px;
+}
+.portfolio-logo p{
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+}
+
+.card{
+    position: relative;
+}
+.card .image{
+    position: absolute;
+    top: 285px;
+}
+.card .image img{
+
+}
+.card .bottom{
+
+}
+.card .bottom h3{
+
+}
+.card .bottom p{
+
+}
+/* end section-4 rules  */
